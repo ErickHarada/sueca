@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Sueca</title>
+</head>
+
+<body>
+    <div class="table">
+        <div class="count"></div>
+        <div class="card">
+            <div class="value"></div>
+            <div class="suit">
+                <img class="suit__img">
+            </div>
+            <div class="value value--down"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="material-symbols-outlined buttons__button  buttons__button--gray" onclick="shuffleDeck()">
+                shuffle
+            </button>
+            <button id="btn-next" class="material-symbols-outlined buttons__button  buttons__button--green"
+                onclick="nextCard()">
+                navigate_next
+            </button>
+        </div>
+    </div>
+    <div class="rules">
+        <div class="board">
+            <h3 class="board__title">Regras</h3>
+            <div class="rule">
+                <div class="rule__index"></div>
+                <div class="rule__desc"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="material-symbols-outlined buttons__button  buttons__button--gray" onclick="resetRules()">
+                restart_alt
+            </button>
+            <button class="buttons__button  buttons__button--gray buttons__button--backup" onclick="backup()">
+                Fiz merda
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
